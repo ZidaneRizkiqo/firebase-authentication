@@ -7,6 +7,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import PublicRoute from "./PublicRoute"; 
 import ResetPasswordPage from "../pages/ResetPasswordPage";
 import ForgotPasswordPage from "../pages/ForgotPasswordPage";
+import HomePage from "../pages/HomePage";
 
 const appRouter = createBrowserRouter([
     {
@@ -15,7 +16,7 @@ const appRouter = createBrowserRouter([
         children: [
             {
                 path: "/" ,
-                element: <PublicRoute element={<LoginPage />} />
+                element: <PublicRoute element={<HomePage />} />
             },
             {
                 path: "/login" ,

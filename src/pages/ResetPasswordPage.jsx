@@ -42,7 +42,6 @@ const ResetPasswordPage = () => {
         }
 
     }
-    console.log(query.get('mode'), query.get('oobCode'))
     return (
         <div className="bg-gray-50 font-[sans-serif] text-[#333] ">
             <div className="min-h-screen flex flex-col items-center justify-center py-6 px-4">

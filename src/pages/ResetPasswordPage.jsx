@@ -31,7 +31,6 @@ const ResetPasswordPage = () => {
         setIsSubmitting(true)
         try {
             const res = await resetPassword(query.get('oobCode'), password)
-            console.log(res);
             showSuccess(`Password has been changed, you can login now.`)
         }
         catch (e) {
